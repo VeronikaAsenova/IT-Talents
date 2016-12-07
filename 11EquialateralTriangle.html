@@ -1,0 +1,24 @@
+<script>
+var h = Number(prompt("Enter a height: "));
+var spaces = h-1;
+var stars = 1;
+
+for (row=1; row <= h; row++)  {
+    //print spaces
+    for (var s = 1; s<=spaces; s++) {
+         alert(" ");
+    }
+    
+    //print stars    
+    for (var st = 1; st<=stars; st++) {
+         alert("*");
+    }
+
+    // update number of spaces and stars for each row
+    spaces--;
+    stars += 2;
+
+    // new line
+    console.log();
+}
+</script>
