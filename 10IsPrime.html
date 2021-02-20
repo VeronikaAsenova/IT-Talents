@@ -1,0 +1,21 @@
+<script>
+
+var number=Number(prompt("Enter a number: "));
+ 
+var isPrime=true;
+
+for(var prime=2; prime<=Math.sqrt(number);prime++){
+    if(number%prime===0){
+        isPrime===false;
+        alert("Not prime number!");
+        break;
+    }
+    if(isPrime){
+        alert("The number is prime");
+    }
+    else{
+        alert("Not prime number!");
+    }
+}
+
+</script>
